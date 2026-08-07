@@ -1,0 +1,26 @@
+{
+  "name": "altix-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ALTIX - Enterprise Availability & Infrastructure Monitoring SaaS Platform",
+  "scripts": {
+    "dev": "npm run dev --prefix apps/web",
+    "dev:api": "npm run dev --prefix apps/api",
+    "build:web": "npm run build --prefix apps/web",
+    "start:web": "npm run start --prefix apps/web"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "keywords": [
+    "uptime",
+    "monitoring",
+    "saas",
+    "observability",
+    "status-page",
+    "real-time",
+    "infrastructure"
+  ],
+  "author": "ALTIX Team",
+  "license": "MIT"
+}
