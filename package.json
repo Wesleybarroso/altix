@@ -7,22 +7,15 @@
     "dev": "npm run dev --prefix apps/web",
     "dev:api": "npm run dev --prefix apps/api",
     "build": "npm run build --prefix apps/web",
-    "build:web": "npm run build --prefix apps/web",
+    "build:web": "cd apps/web && npm run build",
     "vercel-build": "npm run build --prefix apps/web",
     "start:web": "npm run start --prefix apps/web"
   },
   "workspaces": [
     "apps/*"
   ],
-  "dependencies": {
-    "next": "^14.2.3",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
-  "devDependencies": {
-    "next": "^14.2.3",
-    "typescript": "^5.4.5"
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "keywords": [
     "uptime",
     "monitoring",
