@@ -10,8 +10,23 @@ const port = process.env.PORT || 4000;
 app.use(cors());
 app.use(express.json());
 
+export interface Monitor {
+  id: string;
+  name: string;
+  protocol: string;
+  target: string;
+  status: string;
+  latencyMs: number;
+  statusCode?: number;
+  sslDaysRemaining?: number;
+  uptimePercent: number;
+  intervalSeconds: number;
+  lastChecked: string;
+  errorMessage?: string;
+}
+
 // In-Memory Database Store for Monitored Assets & Users
-const mockMonitors = [
+const mockMonitors: Monitor[] = [
   {
     id: 'mon-101',
     name: 'Production API Gateway',
