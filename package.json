@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npm run dev --prefix apps/web",
     "dev:api": "npm run dev --prefix apps/api",
-    "build": "npm run build --prefix apps/web && cp -r apps/web/.next .next",
+    "build": "npm run build --prefix apps/web && cp -r apps/web/.next ./.next",
     "build:web": "cd apps/web && npm run build",
     "vercel-build": "npm run build --prefix apps/web",
     "start:web": "npm run start --prefix apps/web"
