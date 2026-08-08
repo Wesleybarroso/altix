@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'standalone',
   // Export as static HTML files
-  output: 'export',
+
   reactStrictMode: true,
   transpilePackages: ['lucide-react'],
   // i18n disabled for static export – translations handled client‑side
