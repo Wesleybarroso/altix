@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Search, Bell, ShieldCheck, Sun, Moon, Plus } from 'lucide-react';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
 import Link from 'next/link';
 
 export const Navbar: React.FC = () => {
@@ -42,6 +43,9 @@ export const Navbar: React.FC = () => {
           <Bell className="w-4 h-4" />
           <span className="absolute top-1 right-1 w-2 h-2 rounded-full bg-altix-offline" />
         </button>
+
+        {/* Language Switcher */}
+        <LanguageSwitcher />
 
         {/* User avatar */}
         <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-altix-green to-emerald-400 p-[1px]">

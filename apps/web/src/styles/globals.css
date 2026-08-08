@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utilities */
+@layer utilities {
+  .glass-card {
+    @apply bg-altix-bg/70 backdrop-blur-xl border border-white/10 rounded-xl shadow-glow;
+  }
+}

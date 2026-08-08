@@ -1,0 +1,43 @@
+{
+  "navbar": {
+    "brand": "ALTIX",
+    "tagline": "REALTIME PULSE",
+    "links": {
+      "features": "Features",
+      "howItWorks": "How It Works",
+      "testimonials": "Testimonials",
+      "pricing": "Pricing"
+    }
+  },
+  "hero": {
+    "title": "Monitor Your Services in Real‑Time",
+    "subtitle": "Neon‑green alerts, instant uptime checks, and a sleek dashboard.",
+    "cta": "Go to Dashboard"
+  },
+  "meta": {
+    "title": "ALTIX – Real‑Time Monitoring",
+    "description": "Stay ahead of downtime with ALTIX's neon‑green monitoring platform."
+  },
+  "features": {
+    "title": "Powerful Features",
+    "items": [
+      {"title": "Instant Alerts", "description": "Get notified the moment something goes down."},
+      {"title": "Custom Dashboards", "description": "Tailor the view to what matters most."},
+      {"title": "Global Checks", "description": "Monitor from multiple locations worldwide."}
+    ]
+  },
+  "trust": {
+    "title": "Trusted by Leading Teams"
+  },
+  "testimonials": {
+    "title": "What Our Users Say"
+  },
+  "pricing": {
+    "title": "Simple Pricing",
+    "tiers": [
+      {"name": "Free", "price": "$0", "features": ["Basic monitors", "Email alerts"]},
+      {"name": "Pro", "price": "$29/mo", "features": ["Unlimited monitors", "SMS alerts", "Custom branding"]},
+      {"name": "Enterprise", "price": "Contact us", "features": ["Dedicated support", "SLA guarantees", "On‑prem deployment"]}
+    ]
+  }
+}

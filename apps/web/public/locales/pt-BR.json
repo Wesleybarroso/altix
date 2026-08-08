@@ -1,0 +1,43 @@
+{
+  "navbar": {
+    "brand": "ALTIX",
+    "tagline": "REALTIME PULSE",
+    "links": {
+      "features": "Recursos",
+      "howItWorks": "Como funciona",
+      "testimonials": "Depoimentos",
+      "pricing": "Preços"
+    }
+  },
+  "hero": {
+    "title": "Monitore seus serviços em tempo real",
+    "subtitle": "Alertas neon‑verdes, verificações instantâneas e um dashboard elegante.",
+    "cta": "Ir para o Dashboard"
+  },
+  "meta": {
+    "title": "ALTIX – Monitoramento em Tempo Real",
+    "description": "Fique à frente das quedas com a plataforma de monitoramento neon‑verde da ALTIX."
+  },
+  "features": {
+    "title": "Recursos poderosos",
+    "items": [
+      {"title": "Alertas instantâneos", "description": "Seja notificado assim que algo falhar."},
+      {"title": "Dashboards customizáveis", "description": "Personalize a visualização do que importa."},
+      {"title": "Checagens globais", "description": "Monitore de múltiplas localidades ao redor do mundo."}
+    ]
+  },
+  "trust": {
+    "title": "Confiado por equipes líderes"
+  },
+  "testimonials": {
+    "title": "O que nossos usuários dizem"
+  },
+  "pricing": {
+    "title": "Preços simples",
+    "tiers": [
+      {"name": "Grátis", "price": "R$0", "features": ["Monitores básicos", "Alertas por email"]},
+      {"name": "Pro", "price": "R$129/mês", "features": ["Monitores ilimitados", "Alertas SMS", "Branding customizado"]},
+      {"name": "Enterprise", "price": "Entre em contato", "features": ["Suporte dedicado", "Garantias SLA", "Implantação on‑premise"]}
+    ]
+  }
+}

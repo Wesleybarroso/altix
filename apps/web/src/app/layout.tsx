@@ -1,6 +1,8 @@
 import React from 'react';
 import './globals.css';
 import { CommandPalette } from '@/components/CommandPalette';
+import { I18nProvider } from '@/app/lib/i18n';
+import CookieConsent from '@/components/CookieConsent';
 
 export const metadata = {
   title: 'ALTIX - Monitoramento Inteligente. Disponibilidade em Tempo Real.',
@@ -15,8 +17,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="dark">
       <body className="bg-altix-bg text-white min-h-screen selection:bg-altix-green selection:text-black">
-        <CommandPalette />
-        {children}
+        <I18nProvider>
+          <CommandPalette />
+          {children}
+          <CookieConsent />
+        </I18nProvider>
       </body>
     </html>
   );

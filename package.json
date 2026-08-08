@@ -4,16 +4,14 @@
   "private": true,
   "description": "ALTIX - Enterprise Availability & Infrastructure Monitoring SaaS Platform",
   "scripts": {
-    "dev": "npm run dev --prefix apps/web",
+    "install:ws": "npm install --workspaces",
     "dev:api": "npm run dev --prefix apps/api",
     "build": "npm run build --prefix apps/web && cp -r apps/web/.next .next",
     "build:web": "cd apps/web && npm run build",
     "vercel-build": "npm run build --prefix apps/web",
     "start:web": "npm run start --prefix apps/web"
   },
-  "workspaces": [
-    "apps/*"
-  ],
+
   "dependencies": {},
   "devDependencies": {},
   "keywords": [

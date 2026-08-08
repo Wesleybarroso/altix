@@ -4,6 +4,7 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/styles/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   darkMode: 'class',
   theme: {
@@ -30,5 +31,13 @@ module.exports = {
       },
     },
   },
-  plugins: [],
-}
+  plugins: [
+    function ({ addBase }) {
+      addBase({
+        '.glass-card': {
+          '@apply bg-altix-bg/70 backdrop-blur-xl border border-white/10 rounded-xl shadow-glow': {},
+        },
+      });
+    },
+  ],
+};
