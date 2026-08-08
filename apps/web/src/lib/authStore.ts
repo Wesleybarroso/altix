@@ -99,3 +99,35 @@ export function saveStoredPreferences(prefs: UserPreferences): void {
     localStorage.setItem('altix_preferences', JSON.stringify(prefs));
   }
 }
+
+// New Notification Settings Types and Functions
+export interface NotificationChannel {
+  enabled: boolean;
+  recipients?: string;
+  webhookUrl?: string;
+  chatId?: string;
+}
+
+export interface NotificationSettings {
+  whatsApp: { enabled: boolean; recipients: string };
+  telegram: { enabled: boolean; chatId: string };
+  discord: { enabled: boolean; webhookUrl: string };
+}
+
+const DEFAULT_NOTIFICATIONS: NotificationSettings = {
+  whatsApp: { enabled: false, recipients: '' },
+  telegram: { enabled: false, chatId: '' },
+  discord: { enabled: false, webhookUrl: '' },
+};
+
+export function getStoredNotifications(): NotificationSettings {
+  if (typeof window === 'undefined') return DEFAULT_NOTIFICATIONS;
+  const data = localStorage.getItem('altix_notifications');
+  return data ? JSON.parse(data) : DEFAULT_NOTIFICATIONS;
+}
+
+export function saveStoredNotifications(settings: NotificationSettings): void {
+  if (typeof window !== 'undefined') {
+    localStorage.setItem('altix_notifications', JSON.stringify(settings));
+  }
+}
