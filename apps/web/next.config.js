@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
   // Export as static HTML files
   output: 'export',
   reactStrictMode: true,
